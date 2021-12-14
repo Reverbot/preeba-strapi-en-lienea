@@ -1,0 +1,19 @@
+module.exports = ({ env }) => ({
+	    upload: {
+      config: {
+        provider: 'strapi-provider-upload-google-cloud-storage',
+        providerOptions: {
+            bucketName: 'bucket-strapi-donald',
+            publicFiles: true,
+            uniform: true,
+            basePath: '',
+        },
+      },
+    },
+    erOptions: {
+      apiKey: env('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'),
+    },
+    settings: {
+      defaultFrom: 'schiffmann10@gmail.com',
+    },
+})
